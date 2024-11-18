@@ -41,3 +41,23 @@ h1, p {
     animation-duration: 1.5s; /* Duration of the fade-in */
     animation-timing-function: ease-out; /* Smooth easing for fade-in */
 }
+
+.shiny-text {
+    font-size: 36px; /* Adjust size as needed */
+    font-weight: bold;
+    background-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet); 
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
