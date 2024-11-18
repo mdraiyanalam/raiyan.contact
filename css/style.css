@@ -1,0 +1,43 @@
+body {
+    background-color: #f7f7f7;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+}
+
+.container {
+    height: 100%; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile img {
+    border-radius: 50%; /* Make the image round */
+    width: 150px; /* Adjust width */
+    height: 150px; /* Adjust height */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    border: 5px solid #fff; /* Optional: adds a border around the image */
+}
+
+h1, p {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 12px 30px; /* Adjust padding for a more balanced look */
+    margin-bottom: 10px; /* Add spacing between buttons */
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center the buttons */
+    width: 100%; /* Ensure buttons span full width */
+}
+
+.animate__fadeIn {
+    animation-duration: 1.5s; /* Duration of the fade-in */
+    animation-timing-function: ease-out; /* Smooth easing for fade-in */
+}
