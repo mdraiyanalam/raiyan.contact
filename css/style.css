@@ -45,7 +45,7 @@ h1, p {
 .shiny-text {
     font-size: 36px; /* Adjust size as needed */
     font-weight: bold;
-    background-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet); 
+    background-image: linear-gradient(to right,	#367588,	#89CFF0, blue, #76ABDF,#BEDBED, #CCCCFF); 
     background-size: 200% 100%;
     background-position: 100% 0;
     color: transparent;
