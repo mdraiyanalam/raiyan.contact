@@ -11,42 +11,66 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
     
-    <!-- FontAwesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> <!-- FontAwesome CDN -->
-
-    <!-- Additional meta tags for mobile optimization -->
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Md Raiyan Alam">
-    <meta property="og:description" content="Online Profile of Md Raiyan Alam. Connect with me via different platforms.">
-    <meta property="og:image" content="img/PP picture.jpg">
+    <!-- FontAwesome and Flaticon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flaticon/2.0.9/css/flaticon.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <div class="row w-100">
+                <!-- Logo on the Left -->
+                <div class="col-6 col-md-3">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="img/spark.play.png" alt="Logo" style="width: 40px; height: 40px;" class="me-2">
+                        Md Raiyan Alam
+                    </a>
+                </div>
+    
+                <!-- Navigation Links on the Right -->
+                <div class="col-6 col-md-9">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
     <div class="container text-center my-5">
         <!-- Profile Image -->
         <div class="profile animate__animated animate__fadeIn mb-4">
             <img src="img/PP picture.jpg" alt="Profile Picture" class="img-fluid rounded-circle" style="max-width: 150px;">
         </div>
 
-        <!-- Name / Title -->
-        <h1 class="animate__animated animate__fadeIn animate__delay-0.5s mb-3 d-flex justify-content-center align-items-center">
-            <a href="https://www.instagram.com/raiyan.speaking/" target="_blank" 
-            class="shiny-text d-flex align-items-center"
-            style="text-decoration: none; color: inherit; gap: 10px;">
-                <i class="fa-brands fa-instagram" style="font-size: 2rem; padding: 3px;"></i>
-                <span style="font-size: 2rem; padding-bottom: 3px;">@mdraiyanalam</span>
-            </a>
-        </h1>
-        
-        <!-- Groundbreaker -->
+        <!-- Greeting -->
         <p class="lead animate__animated animate__fadeIn animate__delay-1s mb-5">
-            Salam or Greeting!<br>
-            In case of necessary, contact me via one of the following platforms.
+            السَّلَامُ عَلَيْكُمْ<br>
+            Peace be upon you<br>
+            আসসালামু আলাইকুম<br>
+            In case of necessary, contact me via one of the following platforms:
         </p>
 
-        <!-- Social Media Links (Buttons) -->
+        <!-- Social Media Links -->
         <div class="d-flex flex-column align-items-center">
             <button type="button" class="btn btn-outline-primary mb-3 animate__animated animate__fadeIn animate__delay-0.1s" onclick="window.open('tel:+8801722465849', '_blank')">
                 <i class="fas fa-phone"></i> Call Me
@@ -63,8 +87,23 @@
             <button type="button" class="btn btn-outline-danger mb-3 animate__animated animate__fadeIn animate__delay-0.9s" onclick="window.open('https://codeforces.com/profile/thesopranos', '_blank')">
                 <i class="fab fa-codeforces"></i> Codeforces
             </button>
+            <button type="button" class="btn btn-outline-danger mb-3 animate__animated animate__fadeIn animate__delay-0.9s" onclick="window.open('https://www.facebook.com/sparks.play.bd', '_blank')">
+                <i class="fab fa-codeforces"></i> Spark.Play
+            </button>
+        </div>
+
+        <!-- Scroll Down Icon -->
+        <div class="mt-5">
+            <a href="#about">
+                <i class="flaticon-down-arrow scroll-down-icon"></i>
+            </a>
         </div>
     </div>
+
+    <!-- Scroll-Up Button -->
+    <button class="scroll-up-btn" id="scrollUpBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Footer -->
     <footer class="bg-info text-white py-3 mt-5">
@@ -75,8 +114,10 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/style.js"></script>
 
-    <!-- Bootstrap JS (for popper and responsive behavior) -->
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
